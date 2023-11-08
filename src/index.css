@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlbgv5qhmSA.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlYHuJqhmSA.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZguJqhmSA.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UaSrEBBsBhlBjvfkSLk3abBFkvpkARTPlZJuJqhmSA.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNG9hU4-6qm.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGERI4-6qm.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGdhI4-6qm.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Alegreya';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(fonts/alegreya/v35/4UacrEBBsBhlBjvfkQjt71kZfyBzPgNGXxI4-6qm.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Piazolla';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(fonts/ofont.ru_Piazzolla.ttf) format('truetype');
+}
+
+.background-white {
+    background-color: white;
+}
+.background-light-grey {
+    background-color: #e8e8e8;
+}
+
+.font-menu-header {
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.header-image-col {
+    max-height: 210px;
+}
+
+.list-group-item{
+    color: black;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+
+}
+.link-ease-in-out a {
+    display: inline-block;
+    color: black; /* Цвет обычной ссылки */
+    line-height: 2;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+    font-family: Piazolla;
+}
+.link-ease-in-out a:after {
+    display: block;
+    content: "";
+    height: 1px; /* Высота линии */
+    width: 0%;
+    background-color: #9a744d;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
+
+.card-custom{
+    max-width: 18rem;
+}
+
+.footer-menu{
+    display: inline-block;
+    color: #9a744d; /* Цвет обычной ссылки */
+    line-height: 2;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+    font-family: Piazolla;
+    font-size: small;
+}
+
+.footer-menu:hover {
+    color: #d09969; /* Цвет обычной ссылки */
+
+}
