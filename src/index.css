@@ -123,6 +123,10 @@
     font-size: small;
 }
 
+.font-piazolla {
+    font-family: Piazolla;
+}
+
 .footer-menu:hover {
     color: #d09969; /* Цвет обычной ссылки */
 
