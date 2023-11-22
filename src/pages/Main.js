@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
+import Header from "../Header";
+import Content from "../Content";
+import Footer from "../Footer";
 
 
-const App = () => (
+const Main = () => (
     <div className="container">
         <Header/>
         <Content/>
@@ -13,4 +13,4 @@ const App = () => (
 
     </div>
 );
-export default App;
+export default Main;
