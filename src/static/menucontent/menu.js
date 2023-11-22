@@ -1,6 +1,6 @@
 export const menu = [
     {
-    title: 'МАГАЗИН', link: '', key: 1,
+    title: 'МАГАЗИН', link: '/shop', key: 1,
 }, {
     title: 'ОПЛАТА', link: '', key: 2,
 }, {

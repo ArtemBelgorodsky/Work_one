@@ -131,3 +131,16 @@
     color: #d09969; /* Цвет обычной ссылки */
 
 }
+
+/* SHOP */
+
+
+.shop-card {
+    width: 32rem;
+
+}
+
+.img-shop {
+    object-fit: cover;
+    height: 700px;
+}
