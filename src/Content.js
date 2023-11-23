@@ -16,21 +16,21 @@ const Content = () => {
             <div className="row align-items-center text-center justify-content-center ">
                 <div className="col-10 d-flex justify-content-around flex-wrap">
                     <div className="card card-custom" >
-                        <img src="https://terem-ermaka.ru/wp-content/uploads/3/9/c/39c5041054ccf38e7ea39172a9e7a6e4.jpeg" className="card-img-top" alt="..."/>
+                        <img src="https://terem-ermaka.ru/wp-content/uploads/3/9/c/39c5041054ccf38e7ea39172a9e7a6e4.jpeg" className="card-img-top img-main" alt="..."/>
                             <div className="card-body">
                                 <p className="card-text">Some quick example text to build on the card title and make up
                                     the bulk of the card's content.</p>
                             </div>
                     </div>
                     <div className="card card-custom" >
-                        <img src="https://hakkon.club/uploads/posts/2023-01/thumbs/1673694937_hakkon-club-p-voskovaya-svadba-krasivo-20.jpg" className="card-img-top" alt="..."/>
+                        <img src="https://hakkon.club/uploads/posts/2023-01/thumbs/1673694937_hakkon-club-p-voskovaya-svadba-krasivo-20.jpg" className="card-img-top img-main" alt="..."/>
                         <div className="card-body">
                             <p className="card-text">Some quick example text to build on the card title and make up
                                 the bulk of the card's content.</p>
                         </div>
                     </div>
                     <div className="card card-custom" >
-                        <img src="https://dnevnikpodelok.ru/wp-content/uploads/2022/12/kofejnye-podelki-31.jpg" className="card-img-top" alt="..."/>
+                        <img src="https://dnevnikpodelok.ru/wp-content/uploads/2022/12/kofejnye-podelki-31.jpg" className="card-img-top img-main" alt="..."/>
                         <div className="card-body">
                             <p className="card-text">Some quick example text to build on the card title and make up
                                 the bulk of the card's content.</p>

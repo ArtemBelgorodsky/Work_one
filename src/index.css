@@ -113,6 +113,11 @@
     max-width: 18rem;
 }
 
+.img-main {
+    object-fit: cover;
+    max-height: 10rem;
+}
+
 .footer-menu{
     display: inline-block;
     color: #9a744d; /* Цвет обычной ссылки */
@@ -136,11 +141,33 @@
 
 
 .shop-card {
-    width: 32rem;
+    min-width: 48%;
+
 
 }
 
 .img-shop {
     object-fit: cover;
-    height: 700px;
+    max-height: 600px;
+
 }
+
+.card-text {
+    font-family: Piazolla;
+    text-align: left;
+}
+
+.shop-filter-text {
+    font-family: Piazolla;
+    text-align: left;
+}
+
+.filter-button{
+    border: none;
+}
+
+.filter-button:hover {
+    color: #cb0000;
+
+}
+
