@@ -8,8 +8,8 @@ const Content = () => {
                 <img src="https://images.unsplash.com/photo-1570823635306-250abb06d4b3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="img-fluid" alt="..."/>
             </div>
         </div>
-            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4">
-                <div className="col-12 ">
+            <div className="row text-center background-light-grey p-1 my-4 mx-0 w-80">
+                <div className=" w-100 p-0">
                     <span className="font-menu-header font-piazolla">Популярные товары</span>
                 </div>
             </div>
@@ -38,7 +38,7 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4">
+            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4 mx-0">
                 <div className="col-12 ">
                     <span className="font-menu-header font-piazolla">О нас</span>
                 </div>
@@ -58,7 +58,7 @@ const Content = () => {
                 </div>
 
             </div>
-            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4">
+            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4 mx-0">
                 <div className="col-12 ">
                     <span className="font-menu-header font-piazolla">Доставка</span>
                 </div>
@@ -73,7 +73,7 @@ const Content = () => {
                     </span>
                 </div>
             </div>
-            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4">
+            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4 mx-0">
                 <div className="col-12 ">
                     <span className="font-menu-header font-piazolla">Ваш бренд</span>
                 </div>

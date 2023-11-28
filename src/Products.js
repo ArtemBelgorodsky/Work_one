@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import {goods} from "./static/goodlist/goods";
 import classNames from 'classnames';
+import { Link } from "react-router-dom";
 
-const Product = () => {
+const Products = () => {
 
    const [filter, setFilter] = useState(0)
 
@@ -18,7 +19,7 @@ const Product = () => {
                 <div className="col-12 flex-wrap d-flex justify-content-between flex-md-row flex-column col-md-10">
                     {goods.map(e =>
                          <div className= {classNames("card shop-card mb-4", {"d-none" : filter != e.filter && filter != 0} , {"d-block" : filter == e.filter || filter == 0})} >
-                        <img src={e.image} className="card-img-top img-shop" alt="..."/>
+                        <Link to={`shop${e.link}`}><img src={e.image} className="card-img-top img-shop" alt="..."/></Link>
                             <div className="card-body">
                                 <p className="card-text ">{e.title}</p>
                                 <p className="card-text ">{e.price}</p>
@@ -30,4 +31,4 @@ const Product = () => {
     );
 };
 
-export default Product;
+export default Products;

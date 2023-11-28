@@ -77,6 +77,10 @@
 .header-image-col {
     max-height: 210px;
 }
+.header-img {
+    transition: 0.2s;
+    object-fit: cover;
+}
 
 .list-group-item{
     color: black;
@@ -148,8 +152,14 @@
 
 .img-shop {
     object-fit: cover;
-    max-height: 600px;
+    max-height: 450px;
+    transition: 0.2s;
 
+}
+
+.img-shop:hover{
+    filter: brightness(0.5);
+    cursor: pointer;
 }
 
 .card-text {
@@ -164,6 +174,7 @@
 
 .filter-button{
     border: none;
+    background:none;
 }
 
 .filter-button:hover {

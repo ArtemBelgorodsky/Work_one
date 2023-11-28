@@ -6,7 +6,8 @@ import Footer from "../Footer";
 
 
 const Main = () => (
-    <div className="container">
+
+    <div className="container p-0">
         <Header/>
         <Content/>
         <Footer/>

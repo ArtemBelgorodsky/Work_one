@@ -9,6 +9,7 @@ import './fonts/Alegreya.ttf';
 
 import Main from './pages/Main';
 import Shop from "./pages/Shop";
+import Product from "./pages/Product"
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
         element: <Main/>,
     },
     {
-        path: "/shop",
+        path: "/shop/*",
         element: <Shop/>,
     },
 ]);
