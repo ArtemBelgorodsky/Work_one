@@ -1,6 +1,6 @@
 import React from 'react';
 import {menu} from "./static/menucontent/menu";
-import './index.css';
+import './index.css'; 
 
 
 const Footer = () => {
