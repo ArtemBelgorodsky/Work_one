@@ -19,7 +19,7 @@ const Products = () => {
                 <div className="col-12 flex-wrap d-flex justify-content-between flex-md-row flex-column col-md-10">
                     {goods.map(e =>
                          <div className= {classNames("card shop-card mb-4", {"d-none" : filter != e.filter && filter != 0} , {"d-block" : filter == e.filter || filter == 0})} >
-                        <Link to={`shop${e.link}`}><img src={e.image} className="card-img-top img-shop" alt="..."/></Link>
+                        <Link to={`product/${e.id}`}><img src={e.image} className="card-img-top img-shop" alt="..."/></Link>
                             <div className="card-body">
                                 <p className="card-text ">{e.title}</p>
                                 <p className="card-text ">{e.price}</p>

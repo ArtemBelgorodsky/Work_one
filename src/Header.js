@@ -4,19 +4,25 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import {menu} from "./static/menucontent/menu";
 
+
 const Header = () => {
 
-    const [scrollTop, setScrollTop] = useState(0);
+    const [scrollTop, setScrollTop] = useState();
 
-    window.addEventListener('scroll', function() {
-        setScrollTop(this.window.scrollY)
-        if (scrollTop > 120) {
-            document.getElementById("header-img").style.height= "100px";
-        }
-        else {
-            document.getElementById("header-img").style.height= "200px";
-        }
-      });
+
+
+        window.addEventListener('scroll', function() {
+            setScrollTop(this.window.scrollY)
+            if (scrollTop > 350) {
+                document.getElementById("header-img").style.height= "80px";
+            }
+            else {
+                document.getElementById("header-img").style.height= "150px";
+            }
+          });
+
+
+    
     
     return (
         <div className='sticky-top background-white'>

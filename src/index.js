@@ -4,12 +4,14 @@ import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import {loader as productLoader}  from "./routes/Product"
 
 import './fonts/Alegreya.ttf';
 
 import Main from './pages/Main';
 import Shop from "./pages/Shop";
-import Product from "./pages/Product"
+import {Product as Product} from "./routes/Product"
+
 
 const router = createBrowserRouter([
     {
@@ -17,8 +19,13 @@ const router = createBrowserRouter([
         element: <Main/>,
     },
     {
-        path: "/shop/*",
+        path: "/shop",
         element: <Shop/>,
+    },
+    {
+        path: "shop/product/:productId",
+        element: <Product/>,
+        loader: productLoader,
     },
 ]);
 

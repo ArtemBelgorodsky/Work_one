@@ -73,11 +73,6 @@ const Content = () => {
                     </span>
                 </div>
             </div>
-            <div className="row align-items-center text-center justify-content-center background-light-grey p-1 my-4 mx-0">
-                <div className="col-12 ">
-                    <span className="font-menu-header font-piazolla">Ваш бренд</span>
-                </div>
-            </div>
         </>
 
     );
