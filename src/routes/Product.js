@@ -3,13 +3,32 @@ import Footer from '../Footer'
 import Header from '../Header'
 import { useLoaderData } from 'react-router-dom'
 import classNames from 'classnames'
+import { useDispatch } from 'react-redux'
+import { add } from '../features/cart/cartSlice'
+
 
 function Product() {
   const product = useLoaderData()
-  console.log(product)
+  
+  const dispatch = useDispatch()
 
-  const [count,setCount] = useState(1);
-  console.log(count)
+  const [count, setCount] = useState(1)
+  const [aroma, setAroma] = useState('')
+  const [fitil, setFitil] = useState('')
+  const [volume, setVolume] = useState('')
+  
+  const addProduct = () => {
+      dispatch(add([{
+        id: product[0].id,
+        quantity: count,
+        aroma: aroma,
+        fitil: fitil,
+        volume: volume,
+        image: product[0].image,
+        title: product[0].title,
+        price: product[0].price,
+      }]))
+  }
 
   return (
     <div className='container'>
@@ -20,26 +39,26 @@ function Product() {
     </div>
     <div class="col-12 col-md-6">
       <div className='product-title-text'><h2>{product[0].title}</h2></div>
-      <div className='product-title-text mb-2'><h2>от {product[0].price}</h2></div>
-      <select className="form-select select-product mb-2 p-3" aria-label="Default select example">
-        <option selected>Выберете аромат</option>
-        {product[0].aroma.map(e => <option value="1">{e}</option>)}
+      <div className='product-title-text mb-2'><h2>{product[0].price} руб.</h2></div>
+      <select className="form-select select-product mb-2 p-3" aria-label="Default select example" onChange={(e) => setAroma(e.target.value)}>
+        <option selected value='Аромат не выбран'>Выберете аромат</option>
+        {product[0].aroma.map(e => <option value={e}>{e}</option>)}
       </select>
-      <select className="form-select select-product mb-2 p-3" aria-label="Default select example">
-        <option selected>Выберете фитиль</option>
-        {product[0].fitil.map(e => <option value="1">{e}</option>)}
+      <select className="form-select select-product mb-2 p-3" aria-label="Default select example" onChange={(e) => setFitil(e.target.value)}>
+        <option selected value='Фитиль не выбран'>Выберете фитиль</option>
+        {product[0].fitil.map(e => <option value={e}>{e}</option>)}
       </select>
-      <select className="form-select select-product mb-2 p-3" aria-label="Default select example">
-        <option selected>Выберете объем</option>
-        {product[0].volume.map(e => <option value="1">{e}</option>)}
+      <select className="form-select select-product mb-2 p-3" aria-label="Default select example" onChange={(e) => setVolume(e.target.value)}>
+        <option selected value='Объем не выбран'>Выберете объем</option>
+        {product[0].volume.map(e => <option value={e} onClick={() => setVolume(e)}>{e}</option>)}
       </select>
       <div class="row text-center justify-content-between m-0 mb-2">
       <div class="btn-group  d-flex btn-group-product p-0" role="group" aria-label="Basic example">
-  <button type="button " className={classNames("btn btn-light btn-product", {"disabled": count == 1})} onClick={() => setCount(count-1)}> - </button>
+  <button type="button " className={classNames("btn btn-light btn-product", {"disabled": count == 1})} onClick={() => setCount(count - 1)}> - </button>
   <div className='text-center d-flex align-items-center p-2'>{count}</div>
-  <button type="button" class="btn btn-light btn-product " onClick={() => setCount(count+1)}> + </button>
+  <button type="button" class="btn btn-light btn-product " onClick={() => setCount(count + 1)}> + </button>
   </div>
-  <button type="button" class="btn btn-outline-secondary btn-submit">Добавить в корзину</button>
+  <button type="button" class="btn btn-outline-secondary btn-submit" onClick={() => addProduct()}>Добавить в корзину</button>
       </div>
       <p className='text-start product-title-text'>
       <span>Срок изготовления свечей 4-5 рабочих дней.<br/>
