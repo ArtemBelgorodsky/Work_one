@@ -9,10 +9,10 @@ import Icon from "./static/icons/shopping-cart.png"
 
 const Header = () => {
     
-    const cart = useSelector((state) => state)
+    const cart = useSelector((state) => state.cart)
 
     return (
-        <div className='sticky-top background-white'>
+        <div className='sticky-top background-white header-top'>
             <div className="row text-center align-items-center flex-column mb-5">
                 <div className="col-12 header-image-col p-2">
                     <div className='row align-items-center flex-nowrap'>
@@ -22,7 +22,7 @@ const Header = () => {
                         <div className='col-6 col-md-10'>
                             <Link to={'/'}><img src="https://i.pinimg.com/736x/fa/30/b6/fa30b6460239d2d3eada8e80e89c793b--desain-logo-logo-google.jpg" className="img-fluid header-img" alt="..." id='header-img'/></Link>
                         </div>
-                         <div className='col-3 col-md-1 d-flex flex-row align-items-center'>
+                         <div className='col-3 col-md-1 d-flex flex-row'>
                            <Link to={'/cart'}><img src={Icon} className='icon align-self-baseline p-1 '></img></Link>
                            <div>{cart.length}</div>
                          </div>

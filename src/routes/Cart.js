@@ -10,12 +10,12 @@ export default function Cart() {
 
     const dispatch = useDispatch()
 
-    const cart = useSelector((state) => state)
+    const cart = useSelector((state) => state.cart)
     console.log(cart)
 
-    const delProduct = (id) => {
+    const delProduct = (position) => {
         dispatch(del({
-            id: id
+            position: position
         }
         ))
     }
@@ -32,7 +32,7 @@ export default function Cart() {
             <div className='col-6 cart-text'>
                 <p>Продукт</p>
             </div>
-            <div className='col-2 cart-text text-center'>
+            <div className='col-1 cart-text text-center'>
                 <p>Цена</p>
             </div>
             <div className='col-2 cart-text text-center'>
@@ -41,8 +41,11 @@ export default function Cart() {
             <div className='col-2 cart-text text-center'>
                 <p>Сумма</p>
             </div>
+            <div className='col-1 cart-text text-center'>
+
+            </div>
         </div>
-        {cart.map(e => <div className='row mb-2'>
+        {cart.map((e) => <div className='row mb-2'>
             <div className='col-6 cart-text'>
                 <div className='row'>
                     <div className='col-4'>
@@ -66,7 +69,7 @@ export default function Cart() {
                 <p>{e.price * e.quantity}</p>
             </div>
             <div className='col-1 cart-text text-center'>
-                <button className='btn-cart'><img src={DeleteIcon} className='btn-cart-img' onClick={() => delProduct(e.id)}/></button>
+                <button className='btn-cart'><img src={DeleteIcon} className='btn-cart-img' onClick={() => delProduct(e.position)}/></button>
             </div>
         </div>)}
         

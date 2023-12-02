@@ -3,7 +3,7 @@ import Footer from '../Footer'
 import Header from '../Header'
 import { useLoaderData } from 'react-router-dom'
 import classNames from 'classnames'
-import { useDispatch } from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { add } from '../features/cart/cartSlice'
 
 
@@ -16,9 +16,10 @@ function Product() {
   const [aroma, setAroma] = useState('')
   const [fitil, setFitil] = useState('')
   const [volume, setVolume] = useState('')
+
   
   const addProduct = () => {
-      dispatch(add([{
+      dispatch(add({
         id: product[0].id,
         quantity: count,
         aroma: aroma,
@@ -27,7 +28,7 @@ function Product() {
         image: product[0].image,
         title: product[0].title,
         price: product[0].price,
-      }]))
+      }))
   }
 
   return (
@@ -58,7 +59,7 @@ function Product() {
   <div className='text-center d-flex align-items-center p-2'>{count}</div>
   <button type="button" class="btn btn-light btn-product " onClick={() => setCount(count + 1)}> + </button>
   </div>
-  <button type="button" class="btn btn-outline-secondary btn-submit" onClick={() => addProduct()}>Добавить в корзину</button>
+  <button type="button" className={classNames("btn btn-outline-secondary btn-submit", {"disabled" : aroma == '' || fitil == '' || volume == '' })} onClick={() => addProduct()}>Добавить в корзину</button>
       </div>
       <p className='text-start product-title-text'>
       <span>Срок изготовления свечей 4-5 рабочих дней.<br/>

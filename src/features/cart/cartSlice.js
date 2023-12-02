@@ -1,16 +1,27 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { removeItem } from 'localforage';
 
-const initialState = []
+const initialState = { cart: []}
+
+let position = -1;
 
 export const cartSlice = createSlice({
   name: 'counter',
   initialState,
   reducers: {
     add: (state, action) => {
-          return [...state, ...action.payload]
+          const itemInCart = state.cart.find((item) => item.aroma === action.payload.aroma && item.fitil === action.payload.fitil && item.volume === action.payload.volume);
+          if (itemInCart) {
+            itemInCart.quantity++
+            itemInCart.position = position++
+          } else {
+            state.cart.push({...action.payload, position : position ++})
+          }
+         
     },
     del: (state, action) => {
-      return state.filter((obj) => obj.id !== action.payload.id)
+      removeItem = state.cart.filter ((item) => item.position !== action.payload.position)
+      state.cart = removeItem
     }
   },
 })

@@ -16,7 +16,7 @@ const Products = () => {
                     <button className='filter-button' onClick={() => setFilter(2)}>Диффузорры</button>
                     <button className='filter-button' onClick={() => setFilter(3)}>Свечи в бетоне</button>
                 </div>
-                <div className="col-12 flex-wrap d-flex justify-content-between flex-md-row flex-column col-md-10">
+                <div className="col-12 flex-wrap d-flex justify-content-between flex-md-row flex-column col-md-10 align-items-center">
                     {goods.map(e =>
                          <div className= {classNames("card shop-card mb-4", {"d-none" : filter != e.filter && filter != 0} , {"d-block" : filter == e.filter || filter == 0})} >
                         <Link to={`product/${e.id}`}><img src={e.image} className="card-img-top img-shop" alt="..."/></Link>
