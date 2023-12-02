@@ -72,7 +72,7 @@ export default function Cart() {
                 <button className='btn-cart'><img src={DeleteIcon} className='btn-cart-img' onClick={() => delProduct(e.position)}/></button>
             </div>
         </div>)}
-        
+        <button type="button" className="btn btn-outline-secondary btn-cart">Заказать</button>
         <Footer/>
     </div>
   )
