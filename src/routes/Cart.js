@@ -5,6 +5,8 @@ import { useSelector} from 'react-redux'
 import DeleteIcon from "../static/icons/delete.png"
 import { del } from '../features/cart/cartSlice'
 import { useDispatch } from 'react-redux'
+import classNames from 'classnames'
+import { Link } from 'react-router-dom'
 
 export default function Cart() {
 
@@ -30,16 +32,16 @@ export default function Cart() {
         </div>
         <div className='row'>
             <div className='col-6 cart-text'>
-                <p>Продукт</p>
+                <p class="font-weight-normal">Продукт</p>
             </div>
             <div className='col-1 cart-text text-center'>
-                <p>Цена</p>
+                <p class="font-weight-normal">Цена</p>
             </div>
             <div className='col-2 cart-text text-center'>
-                <p>Количество</p>
+                <p class="font-weight-normal">Количество</p>
             </div>
             <div className='col-2 cart-text text-center'>
-                <p>Сумма</p>
+                <p class="font-weight-normal">Сумма</p>
             </div>
             <div className='col-1 cart-text text-center'>
 
@@ -72,7 +74,7 @@ export default function Cart() {
                 <button className='btn-cart'><img src={DeleteIcon} className='btn-cart-img' onClick={() => delProduct(e.position)}/></button>
             </div>
         </div>)}
-        <button type="button" className="btn btn-outline-secondary btn-cart">Заказать</button>
+        <Link to={'/payment'}><button type="button" className={classNames("btn btn-outline-secondary btn-cart", {"disabled": cart.length <= 0})}>Заказать</button></Link>
         <Footer/>
     </div>
   )

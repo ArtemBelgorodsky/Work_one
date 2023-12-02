@@ -15,6 +15,8 @@ import Main from './pages/Main';
 import Shop from "./pages/Shop";
 import {Product as Product} from "./routes/Product"
 import Cart from './routes/Cart';
+import Payment from './routes/Payment';
+import Delivery from './routes/Delivery';
 
 
 const router = createBrowserRouter([
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
     {
         path: "/cart",
         element: <Cart/>,
+    },
+    {
+        path: "/payment",
+        element: <Payment/>,
+    },
+    {
+        path: "/delivery",
+        element: <Delivery/>,
     },
 ]);
 
