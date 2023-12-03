@@ -160,13 +160,14 @@
 
 
 .shop-card {
-    width: 48%;
     transition: 0.2s;
+    margin-right: 20px;
 }
 
 .img-shop {
     object-fit: cover;
-    max-height: 300px;
+    height: 300px;
+    
     transition: 0.2s;
 
 }
@@ -184,6 +185,12 @@
 .shop-filter-text {
     font-family: Piazolla;
     text-align: left;
+}
+
+.shop-filter-text-md{
+    font-family: Piazolla;
+    text-align: left;
+    font-size: 11px !important;
 }
 
 .filter-button{
