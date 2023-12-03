@@ -14,7 +14,7 @@ const Footer = () => {
             </div>
             <div className="row text-center align-items-center flex-column mb-5">
                 <div className="col-2 p-1 col-md-4">
-                    <div className="d-flex flex-column justify-content-between link-ease-in-out flex-md-row">
+                    <div className="d-flex flex-column justify-content-between link-ease-in-out flex-md-row align-items-center">
                         {menu.map(e => <Link className="font-menu-header footer-menu p-1" to={e.link} key={e.key}>{e.title}</Link>)}
                     </div>
                 </div>
