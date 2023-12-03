@@ -196,6 +196,10 @@
 
 }
 
+.link-products {
+    text-decoration: none;
+    color: #000000;
+}
 /* PRODUCT */
 
 .img-product {

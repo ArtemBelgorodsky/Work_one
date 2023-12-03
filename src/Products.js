@@ -21,8 +21,8 @@ const Products = () => {
                          <div className= {classNames("card shop-card mb-4", {"d-none" : filter != e.filter && filter != 0} , {"d-block" : filter == e.filter || filter == 0})} >
                         <Link to={`product/${e.id}`}><img src={e.image} className="card-img-top img-shop" alt="..."/></Link>
                             <div className="card-body">
-                            <Link to={`product/${e.id}`}><p className="card-text ">{e.title}</p></Link>
-                            <Link to={`product/${e.id}`}><p className="card-text ">{e.price}</p></Link>
+                            <Link to={`product/${e.id}`} className='link-products'><p className="card-text ">{e.title}</p></Link>
+                            <Link to={`product/${e.id}`} className='link-products'><p className="card-text ">{e.price}</p></Link>
                             </div>
                     </div>)}
                 </div>
