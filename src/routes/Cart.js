@@ -33,46 +33,46 @@ export default function Cart() {
             </div>
         </div>
         <div className='row'>
-            <div className='col-6 cart-text'>
+            <div className='col-5 col-md-7 cart-text'>
                 <p class="font-weight-normal">Продукт</p>
             </div>
-            <div className='col-1 cart-text text-center'>
+            <div className='col-1 col-md-1 cart-text text-center'>
                 <p class="font-weight-normal">Цена</p>
             </div>
-            <div className='col-2 cart-text text-center'>
+            <div className='col-3 col-md-2 cart-text text-center'>
                 <p class="font-weight-normal">Количество</p>
             </div>
-            <div className='col-2 cart-text text-center'>
+            <div className='col-2 col-md-1 cart-text text-center'>
                 <p class="font-weight-normal">Сумма</p>
             </div>
-            <div className='col-1 cart-text text-center'>
+            <div className='col-1 col-md-1 cart-text text-center'>
 
             </div>
         </div>
         {cart.map((e) => <div className='row mb-2'>
-            <div className='col-6 cart-text'>
-                <div className='row'>
-                    <div className='col-4'>
-                        <img src={e.image} className="img-fluid"></img>
+            <div className='col-5 col-md-7 cart-text'>
+                <div className='row '>
+                    <div className='col-5'>
+                        <img src={e.image} className="img-fluid img-cart"></img>
                     </div>
-                    <div className='col-8'>
-                        <p>{e.title}</p>
-                        <p>Аромат: {e.aroma}</p>
-                        <p>Фитиль: {e.fitil}</p>
-                        <p>Объем: {e.volume}</p>
+                    <div className='col-7'>
+                        <p className='cart-table-text'>{e.title}</p>
+                        <p className='cart-table-text'>Аромат: {e.aroma}</p>
+                        <p className='cart-table-text'>Фитиль: {e.fitil}</p>
+                        <p className='cart-table-text'>Объем: {e.volume}</p>
                     </div>
                 </div>
             </div>
-            <div className='col-2 cart-text text-center'>
-                <p>{e.price}</p>
+            <div className='col-1 col-md-1 cart-text text-center'>
+                <p className='cart-table-text'>{e.price}</p>
             </div>
-            <div className='col-1 cart-text text-center'>
-                <p>{e.quantity}</p>
+            <div className='col-3 col-md-2 cart-text text-center'>
+                <p className='cart-table-text'>{e.quantity}</p>
             </div>
-            <div className='col-2 cart-text text-center'>
-                <p>{e.price * e.quantity}</p>
+            <div className='col-2 col-md-1 cart-text text-center'>
+                <p className='cart-table-text'>{e.price * e.quantity}</p>
             </div>
-            <div className='col-1 cart-text text-center'>
+            <div className='col-1  col-md-1 cart-text text-center'>
                 <button className='btn-cart'><img src={DeleteIcon} className='btn-cart-img' onClick={() => delProduct(e.position)}/></button>
             </div>
         </div>)}

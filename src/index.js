@@ -5,7 +5,6 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import {loader as productLoader}  from "./routes/Product"
-import {loader as cardLoader} from "./routes/Cart"
 import { store } from './store/index'
 import { Provider } from 'react-redux'
  

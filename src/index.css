@@ -239,6 +239,7 @@
 .cart-text {
     font-family: Piazolla;
     text-align: left;
+    font-size: 10px;
 }
 
 .btn-cart {
@@ -250,5 +251,15 @@
     width: 100%;
     max-height: 20px;
     min-height: 20px;
+    min-width: 20px;
     object-fit: cover;
+}
+.img-cart {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.cart-table-text {
+    font-size: 10px;
+    margin-bottom: 5px;
 }
