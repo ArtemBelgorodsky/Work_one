@@ -76,7 +76,7 @@ function Product() {
 }
 
 const loader = async ({req, params}) => {
-const res = await fetch(`http://localhost:3001/${params.productId}`)
+const res = await fetch(`https://json-server-swart-rho.vercel.app/${params.productId}`)
 return res.json()
 }
 

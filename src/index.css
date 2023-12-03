@@ -161,8 +161,7 @@
 
 .shop-card {
     width: 48%;
-
-
+    transition: 0.2s;
 }
 
 .img-shop {

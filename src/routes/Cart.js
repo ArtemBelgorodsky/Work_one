@@ -8,6 +8,8 @@ import { useDispatch } from 'react-redux'
 import classNames from 'classnames'
 import { Link } from 'react-router-dom'
 
+
+
 export default function Cart() {
 
     const dispatch = useDispatch()
@@ -74,7 +76,7 @@ export default function Cart() {
                 <button className='btn-cart'><img src={DeleteIcon} className='btn-cart-img' onClick={() => delProduct(e.position)}/></button>
             </div>
         </div>)}
-        <Link to={'/payment'}><button type="button" className={classNames("btn btn-outline-secondary btn-cart", {"disabled": cart.length <= 0})}>Заказать</button></Link>
+        <Link to={"/payment"}><button type="button" className={classNames("btn btn-outline-secondary btn-cart", {"disabled": cart.length <= 0})}>Заказать</button></Link>
         <Footer/>
     </div>
   )
