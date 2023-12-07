@@ -250,7 +250,7 @@
 .cart-text {
     font-family: Piazolla;
     text-align: left;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .btn-cart {
@@ -271,6 +271,21 @@
 }
 
 .cart-table-text {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 5px;
+}
+
+@media screen and (min-width: 460px) {
+    .cart-table-text {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .cart-text {
+        font-family: Piazolla;
+        text-align: left;
+        font-size: 15px;
+    }
 }

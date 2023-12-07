@@ -5,6 +5,7 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import {loader as productLoader}  from "./routes/Product"
+import {loaderProducts as productsLoader} from "./Products";
 import { store } from './store/index'
 import { Provider } from 'react-redux'
  
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
     {
         path: "/shop",
         element: <Shop/>,
+        loader: productsLoader,
     },
     {
         path: "shop/product/:productId",

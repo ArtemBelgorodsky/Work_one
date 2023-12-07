@@ -1,80 +1,140 @@
 {
-  "1": [
-    {
-      "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038219/images/preview-6955985820f496e06d441782a56bf843.jpeg?version=1",
-      "title": "Свеча куб прозрачное стекло",
-      "price": 1500,
-      "key": "1",
-      "filter": "1",
-      "id": "1",
-      "aroma": ["розовый пион + нектарин", "имбирь + кокос + амбра", "цветущая гвоздика"],
-      "fitil": ["хлопок", "дерево"],
-      "volume": ["20", "30", "50"]
-    }
-  ],
-  "2": [
-    {
-      "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038218/images/preview-750628ebfd8c1262c98b72725dc0b15d.jpeg",
-      "title": "Свеча куб кремовый воск",
-      "price": 1600,
-      "key": "2",
-      "filter": "3",
-      "id": "2",
-      "aroma": ["сандал + амбра", "бамбук + фиалка", "замша + апельсин"],
-      "fitil": ["хлопок"],
-      "volume": ["50", "100", "150"]
-    }
-  ],
-  "3": [
-    {
-      "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038217/images/preview-0c459b2fc1973557fc7bdb4004c1f3d7.jpeg",
-      "title": "Свеча 1 в полоску",
-      "price": 1700,
-      "key": "3",
-      "filter": "2",
-      "id": "3",
-      "aroma": ["розовый пион + нектарин", "имбирь + кокос + амбра", "цветущая гвоздика"],
-      "fitil": ["хлопок", "дерево"],
-      "volume": ["20", "30", "50"]
-    }
-  ],
-  "4": [
-    {
-      "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038215/images/preview-d1c7f363242bfd220e74f08e2ec27700.jpeg",
-      "title": "Свеча 1 каменная в полоску",
-      "price": 1800,
-      "key": "4",
-      "filter": "3",
-      "id": "4",
-      "aroma": ["розовый пион + нектарин", "имбирь + кокос + амбра", "цветущая гвоздика"],
-      "fitil": ["хлопок", "дерево"],
-      "volume": ["20", "30", "50"]
-    }
-  ],
-  "5": [
-    {
-      "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038214/images/preview-ef55a1d61d65a6e94d054f4c15a80e9a.jpeg?version=1",
-      "title": "Свеча куб каменное стекло",
-      "price": 1900,
-      "key": "5",
-      "filter": "1",
-      "id": "5",
-      "aroma": ["розовый пион + нектарин", "имбирь + кокос + амбра", "цветущая гвоздика"],
-      "fitil": ["хлопок", "дерево"],
-      "volume": ["20", "30", "50"]
-    }
-  ],
-  "6": [
-    {
-      "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/21628704/images/preview-7f6cf1d2825169d9c4bff2dede172ad8.jpeg",
-      "title": "Свеча в прозрачном стекле",
-      "price": 2000,
-      "key": "6",
-      "filter": "1",
-      "id": "6",
-      "aroma": ["розовый пион + нектарин", "имбирь + кокос + амбра", "цветущая гвоздика"],
-      "fitil": ["хлопок", "дерево"],
-      "volume": ["20", "30", "50"]
-    }
+  "products" : [
+      {
+        "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038219/images/preview-6955985820f496e06d441782a56bf843.jpeg?version=1",
+        "title": "Свеча куб прозрачное стекло",
+        "price": 1500,
+        "key": "1",
+        "filter": "1",
+        "id": "1",
+        "aroma": [
+          "розовый пион + нектарин",
+          "имбирь + кокос + амбра",
+          "цветущая гвоздика"
+        ],
+        "fitil": [
+          "хлопок",
+          "дерево"
+        ],
+        "volume": [
+          "20",
+          "30",
+          "50"
+        ]
+      }
+    ,
+      {
+        "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038218/images/preview-750628ebfd8c1262c98b72725dc0b15d.jpeg",
+        "title": "Свеча куб кремовый воск",
+        "price": 1600,
+        "key": "2",
+        "filter": "3",
+        "id": "2",
+        "aroma": [
+          "сандал + амбра",
+          "бамбук + фиалка",
+          "замша + апельсин"
+        ],
+        "fitil": [
+          "хлопок"
+        ],
+        "volume": [
+          "50",
+          "100",
+          "150"
+        ]
+      }
+    ,
+      {
+        "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038217/images/preview-0c459b2fc1973557fc7bdb4004c1f3d7.jpeg",
+        "title": "Свеча 1 в полоску",
+        "price": 1700,
+        "key": "3",
+        "filter": "2",
+        "id": "3",
+        "aroma": [
+          "розовый пион + нектарин",
+          "имбирь + кокос + амбра",
+          "цветущая гвоздика"
+        ],
+        "fitil": [
+          "хлопок",
+          "дерево"
+        ],
+        "volume": [
+          "20",
+          "30",
+          "50"
+        ]
+      }
+    ,
+      {
+        "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038215/images/preview-d1c7f363242bfd220e74f08e2ec27700.jpeg",
+        "title": "Свеча 1 каменная в полоску",
+        "price": 1800,
+        "key": "4",
+        "filter": "3",
+        "id": "4",
+        "aroma": [
+          "розовый пион + нектарин",
+          "имбирь + кокос + амбра",
+          "цветущая гвоздика"
+        ],
+        "fitil": [
+          "хлопок",
+          "дерево"
+        ],
+        "volume": [
+          "20",
+          "30",
+          "50"
+        ]
+      }
+    ,
+      {
+        "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/22038214/images/preview-ef55a1d61d65a6e94d054f4c15a80e9a.jpeg?version=1",
+        "title": "Свеча куб каменное стекло",
+        "price": 1900,
+        "key": "5",
+        "filter": "1",
+        "id": "5",
+        "aroma": [
+          "розовый пион + нектарин",
+          "имбирь + кокос + амбра",
+          "цветущая гвоздика"
+        ],
+        "fitil": [
+          "хлопок",
+          "дерево"
+        ],
+        "volume": [
+          "20",
+          "30",
+          "50"
+        ]
+      }
+    ,
+      {
+        "image": "https://shop-cdn1-2.vigbo.tech/shops/198464//products/21628704/images/preview-7f6cf1d2825169d9c4bff2dede172ad8.jpeg",
+        "title": "Свеча в прозрачном стекле",
+        "price": 2000,
+        "key": "6",
+        "filter": "1",
+        "id": "6",
+        "aroma": [
+          "розовый пион + нектарин",
+          "имбирь + кокос + амбра",
+          "цветущая гвоздика"
+        ],
+        "fitil": [
+          "хлопок",
+          "дерево"
+        ],
+        "volume": [
+          "20",
+          "30",
+          "50"
+        ]
+      }
   ]
 }

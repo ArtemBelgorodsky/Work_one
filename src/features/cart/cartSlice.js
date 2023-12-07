@@ -10,9 +10,9 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     add: (state, action) => {
-          const itemInCart = state.cart.find((item) => item.aroma === action.payload.aroma && item.fitil === action.payload.fitil && item.volume === action.payload.volume);
+          const itemInCart = state.cart.find((item) => item.aroma === action.payload.aroma && item.fitil === action.payload.fitil && item.volume === action.payload.volume && item.title === action.payload.title);
           if (itemInCart) {
-            itemInCart.quantity++
+            itemInCart.quantity = itemInCart.quantity + action.payload.quantity
             itemInCart.position = position++
           } else {
             state.cart.push({...action.payload, position : position ++})

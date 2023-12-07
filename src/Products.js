@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import {goods} from "./static/goodlist/goods";
 import classNames from 'classnames';
-import { Link } from "react-router-dom";
+import {Link, useLoaderData} from "react-router-dom";
 
 const Products = () => {
 
    const [filter, setFilter] = useState(0)
+    const products = useLoaderData()
 
     return (
         <div className="container text-center">
@@ -25,7 +25,8 @@ const Products = () => {
                     </select>
                 </div>
                 <div className="col-8 col-md-10 flex-wrap d-flex  flex-md-row flex-column col-md-10 align-items-center">
-                    {goods.map(e =>
+
+                    {products.map(e =>
                          <div className= {classNames("card shop-card mb-4", {"d-none" : filter != e.filter && filter != 0} , {"d-block" : filter == e.filter || filter == 0})} >
                         <Link to={`product/${e.id}`}><img src={e.image} className="card-img-top img-shop" alt="..."/></Link>
                             <div className="card-body">
@@ -39,4 +40,11 @@ const Products = () => {
     );
 };
 
+
+const loaderProducts = async ({req, params}) => {
+    const res = await fetch(`http://localhost:3001/products/`)
+    return res.json()
+}
+
+export {loaderProducts}
 export default Products;
