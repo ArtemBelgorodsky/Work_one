@@ -42,7 +42,7 @@ const Products = () => {
 
 
 const loaderProducts = async ({req, params}) => {
-    const res = await fetch(`http://localhost:3001/products/`)
+    const res = await fetch(`https://json-server-swart-rho.vercel.app/products/`)
     return res.json()
 }
 
